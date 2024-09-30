@@ -16,5 +16,3 @@ def post_new_client_kit(body):
 
     return requests.post(configuration.URL_SERVICE + configuration.CREATE_KITS_PATH,
                          json=body, headers=new_headers)
-
-kit_response = post_new_client_kit(data.new_kit)
